@@ -1,0 +1,557 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700)
+@import 'default'
+
+html, body, .container, .main, #scroller
+  height: 100%
+
+#cover
+  height: 100%
+  background-image: url(../images/cover-bg.jpg)
+  position: relative
+  background-position: top center
+  background-repeat: no-repeat
+  background-size: cover
+  background-attachment: fixed
+
+#features, #app-showcase, #login
+  z-index: 1
+
+// === Section Backgrounds ===
+
+.scroller section img.bg
+  min-height: 100%
+  width: 100%
+  height: auto
+  top: left
+  left: 0
+
+//body {
+ *    background-image: url(images/bgtop.png), url(images/bg.png);
+ *    background-repeat: repeat-x, repeat;
+ *}
+
+//#cover {
+ *  background: url(../images/cover-bg.jpg) no-repeat center center fixed; 
+ *  -webkit-background-size: cover;
+ *  -moz-background-size: cover;
+ *  -o-background-size: cover;
+ *  background-size: cover;
+ *}
+
+#features
+  background-image: url(../images/city-decal.png)
+  background-repeat: no-repeat
+  background-position: bottom
+  background-color: #F6F6F6
+  box-shadow: 0px -7px 8px 0px rgba(0, 0, 0, 0.2)
+  position: relative
+  h2
+    font-family: 'Oswald'
+    text-transform: uppercase
+    font-size: 34px
+    position: absolute
+    left: 50%
+    top: 50%
+    color: #333
+    transform: translate(-50%, -50%)
+
+// === Features Section ===
+
+// === Login Section ===
+
+// === App-showcase Section ===
+
+#app-showcase
+  text-align: center
+  background-color: #F6F6F6
+
+.gradient
+  padding-top: 60px
+  height: 760px
+  width: 100%
+  margin: 0 auto
+  background: #5173a0
+  background: -moz-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #5173a0), color-stop(48%, #76cec0), color-stop(100%, #e7eecb))
+  background: -webkit-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -o-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -ms-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: linear-gradient(135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5173a0', endColorstr='#e7eecb',GradientType=1 )
+
+#app-showcase h1, h2
+  //  font-family: 'Oswald';
+   *letter-spacing: 2px;
+  font-family: 'Oswald'
+  text-align: center
+  text-transform: uppercase
+  color: white
+
+#app-showcase
+  h1
+    font-size: 42px
+  h2
+    font-size: 34px
+
+#iphone-container
+  width: 479px
+  height: 846px
+  background-image: url('../images/iphone.png')
+  display: inline-block
+  position: relative
+  margin-top: -560px
+  img
+    position: absolute
+    top: 102px
+    left: 74px
+
+// === Cover Section ===
+
+#cover
+  position: relative
+
+#heading-container
+  color: white
+  text-transform: uppercase
+  position: fixed
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  z-index: 1
+  h1
+    font-family: 'Oswald'
+    letter-spacing: 1px
+    font-size: 120px
+  h2
+    font-family: 'Oswald'
+    letter-spacing: 1px
+    font-size: 34px
+    margin-bottom: 55px
+
+.sign-up-btn
+  font-family: 'Oswald'
+  font-size: 24px
+  padding: 16px 120px
+  background-color: #53BEB0
+  color: white
+
+// === Pins ===
+
+.pin-container
+  position: relative
+  width: 1000px
+  height: 800px
+  background-image: url("../images/circle.png")
+  background-repeat: no-repeat
+  margin: 0 auto
+
+.pin
+  position: absolute
+
+.pin-icon
+  background-image: url("../images/pin.png")
+  width: 126px
+  height: 104px
+  position: relative
+  margin: 0 auto
+  margin-bottom: 2px
+  opacity: 0
+
+.pin figcaption
+  font-family: 'Oswald'
+  font-weight: bold
+  text-align: center
+  font-size: 18px
+  font-weight: 400
+  opacity: 0
+
+.percentage-count:after
+  content: "%"
+  display: inline-block
+  position: relative
+  top: -2px
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+  font-weight: bold
+
+.count
+  font-family: 'Oswald'
+  color: white
+  font-size: 28px
+  position: absolute
+  left: 51.5%
+  top: 36%
+  transform: translate(-50%, -50%)
+
+.pin-1
+  top: 155px
+  left: 65px
+
+.pin-2
+  top: 50px
+  right: 180px
+
+.pin-3
+  top: 390px
+  right: 60px
+
+// === Team Section ===
+
+#team
+  text-align: center
+  padding: 72px 0 96px 0
+  h1
+    font-family: 'Oswald'
+    color: #808080
+    text-align: center
+    font-size: 42px
+    text-transform: uppercase
+    margin-bottom: 24px
+
+.avatar
+  display: inline-block
+  width: 120px
+  height: 120px
+  margin-right: 20px
+  background-size: contain
+  transition: all .2s ease-in-out
+  -webkit-filter: grayscale(100%)
+  -moz-filter: grayscale(100%)
+  -ms-filter: grayscale(100%)
+  -o-filter: grayscale(100%)
+  filter: grayscale(100%)
+  &:hover
+    transform: scale(1.5)
+    -webkit-filter: none
+    -moz-filter: none
+    -ms-filter: none
+    -o-filter: none
+    filter: none
+  &:nth-of-type(1)
+    background-image: url("../images/ben2.png")
+  &:nth-of-type(2)
+    background-image: url("../images/zack2.png")
+  &:nth-of-type(3)
+    background-image: url("../images/nil2.png")
+  &:nth-of-type(4)
+    background-image: url("../images/non2.png")
+  &:nth-of-type(5)
+    background-image: url("../images/aof2.png")
+  &:nth-of-type(6)
+    background-image: url("../images/yim2.png")
+  &:nth-of-type(7)
+    background-image: url("../images/aun2.png")
+  &:nth-of-type(8)
+    background-image: url("../images/off2.png")
+  &:nth-of-type(9)
+    background-image: url("../images/start2.png")
+  &:nth-of-type(10)
+    background-image: url("../images/mac2.png")
+  &:nth-of-type(11)
+    background-image: url("../images/air2.png")
+  &:nth-of-type(12)
+    background-image: url("../images/cash2.png")
+
+// === Login Section ===
+
+#login
+  padding-top: 72px
+  background: white
+  h1
+    font-family: 'Oswald'
+    color: #808080
+    text-align: center
+
+h4
+  font-family: 'Oswald'
+  color: #808080
+  text-align: center
+
+#login
+  h4
+    color: #808080
+  h1
+    font-size: 42px
+    text-transform: uppercase
+  h4
+    font-size: 24px
+    font-weight: 400
+    margin-bottom: 72px
+
+.login-grid
+  list-style: none
+  text-align: center
+  margin: 0 auto
+  li
+    width: 50%
+    height: 450px
+    background: #8CC7DF
+    color: #fff
+    display: block
+    float: left
+    padding-top: 110px
+    cursor: pointer
+    position: relative
+
+.rb-grid li
+  &.rb-span-2
+    width: 49%
+  &.rb-span-4
+    width: 99%
+  h3
+    font-size: 2.6em
+    font-weight: 100
+  &[class^="icon-"]:before, &[class*=" icon-"]:before
+    font-size: 10em
+    position: absolute
+    display: block
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    line-height: 3
+    opacity: 0.4
+    text-align: right
+    pointer-events: none
+
+.rb-temp
+  display: block
+  font-size: 24px
+  text-transform: uppercase
+  opacity: 0.7
+  -webkit-transition: opacity 0.2s ease-in-out
+  -moz-transition: opacity 0.2s ease-in-out
+  transition: opacity 0.2s ease-in-out
+
+.login-grid li:hover .rb-temp
+  opacity: 1
+
+.rb-overlay
+  opacity: 0
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  -webkit-transition: all 0.4s ease
+  -moz-transition: all 0.4s ease
+  transition: all 0.4s ease
+  z-index: -1
+  pointer-events: none
+  cursor: default
+
+.rb-close
+  position: absolute
+  top: 24px
+  right: 24px
+  font-size: 120px
+  line-height: 24px
+  //  text-indent: -9000px;
+  cursor: pointer
+  z-index: 1000
+
+//.rb-close::before {
+ *  content: 'x';
+ *  font-weight: 100;
+ *  position: absolute;
+ *  top: 0;
+ *  left: 0;
+ *  width: 100%;
+ *  height: 100%;
+ *  font-size: 3em;
+ *  line-height: 0.6;
+ *  text-align: center;
+ *  text-indent: 0px;
+ *}
+
+.rb-week
+  width: 100%
+  height: 100%
+  > div
+    width: 0%
+    height: 100%
+    float: left
+    position: relative
+    padding: 3% 0
+    &:first-child
+      width: 100%
+  span
+    padding: 5% 0
+    font-size: 2em
+    font-weight: 100
+    display: block
+    margin: auto 0
+    height: 30%
+    width: 100%
+    line-height: 0.8
+    &.rb-city
+      font-weight: 700
+      padding: 1% 10%
+      font-size: 1em
+      line-height: 1.2
+
+.form-container
+  width: 400px
+  margin: 200px auto
+
+fieldset
+  border: none
+
+label
+  font-size: 36px
+  display: inline-block
+  margin-bottom: 24px
+
+textarea
+  background-color: transparent
+  border: 2px solid white
+  padding: 12px 24px
+  width: 100%
+  color: white
+  font-size: 18px
+  font-family: "Oswald"
+
+input
+  color: white
+  height: 60px
+  width: 100%
+  font-size: 18px
+  padding: 0 24px
+  background: transparent
+  border: 2px solid white
+  margin-bottom: 12px
+
+.submit-message
+  display: none
+
+\::-webkit-input-placeholder
+  // WebKit browsers
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\:-moz-placeholder
+  // Mozilla Firefox 4 to 18
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\::-moz-placeholder
+  // Mozilla Firefox 19+
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\:-ms-input-placeholder
+  // Internet Explorer 10+
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+.submit-btn
+  font-family: "Oswald"
+  border: 2px solid white
+  color: white
+  text-transform: uppercase
+  background-color: transparent
+  margin-bottom: 18px
+
+.rb-week
+  [class^="icon-"]:before
+    font-size: 2.5em
+    font-weight: normal
+  > div:first-child [class^="icon-"]
+    opacity: 0.1
+
+// Colors
+
+// Grid
+
+.login-grid li
+  &:nth-child(1)
+    background: #3399CC
+    background-image: url('../images/login-bg-user-small.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: left center
+  &:nth-child(2)
+    background: #33CCCC
+    background-image: url('../images/login-bg-business-small.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: right top
+  &:nth-child(1) .rb-week > div:nth-child(1)
+    background: #3399CC
+    background-image: url('../images/login-bg-user-large.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+  &:nth-child(2) .rb-week > div:nth-child(1)
+    background: #33CCCC
+    background-image: url('../images/login-bg-business-large.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+
+// Overlay Columns
+
+// === Contact Section ===
+
+#contact
+  height: 583px
+  padding: 72px 0
+  background-image: url("../images/contact_bg.png")
+  h1
+    text-transform: uppercase
+    text-align: center
+    color: #FEE232
+
+h4
+  text-transform: uppercase
+  text-align: center
+  color: #FEE232
+
+#contact
+  h1
+    font-size: 42px
+  h4
+    font-size: 24px
+    margin-bottom: 36px
+
+.inner-container
+  width: 1000px
+  margin: 0 auto
+
+.col-50
+  width: 50%
+  float: left
+  &:nth-of-type(1)
+    padding-right: 24px
+  &:nth-of-type(2)
+    padding-left: 24px
+
+#contact-form
+  input
+    font-family: 'Oswald'
+  .submit-message
+    font-size: 18px
+    color: white
+    text-align: center
+
+@media screen and (max-width: 63.125em)
+  .login-grid li
+    width: 100%
+    height: 10em
+    text-align: left
+    &.rb-span-2, &.rb-span-4
+      width: 100%
+      height: 10em
+      text-align: left
+    &[class^="icon-"]:before, &[class*=" icon-"]:before
+      font-size: 6em
+      left: auto
+      right: 0
+      line-height: 2.5
+    > div
+      text-align: center
