@@ -62,8 +62,6 @@ var Boxgrid = (function() {
     winsize = getWindowSize();
 
   function init( options ) {    
-    // apply fittext plugin
-    $items.find( 'div.rb-week > div span' ).fitText( 0.3 ).end().find( 'span.rb-city' ).fitText( 0.5 );
     initEvents();
   }
 

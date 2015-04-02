@@ -6,9 +6,17 @@ $( document ).ready(function() {
   var url = '/'; // input url here
 
 
-  $($userForm).on('click .submit-btn', ajaxCall);
-  $($businessForm).on('click .submit-btn', ajaxCall);
-  $($contactForm).on('click .submit-btn', ajaxCall);
+  $($userForm).on('click', '.submit-btn', function() {
+    $userForm.find('.submit-message').fadeIn();
+  });
+
+  $($businessForm).on('click', '.submit-btn', function() {
+    $businessForm.find('.submit-message').fadeIn();
+  });
+
+  $($contactForm).on('click', '.submit-btn', function() {
+    $contactForm.find('.submit-message').fadeIn();
+  });
 
   function ajaxCall() {
     event.preventDefault();

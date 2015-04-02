@@ -1,6 +1,15 @@
 <!doctype html>
 <html>
   <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>UTEENI</title>
+    <meta name="description" content="UTEENAI - Landing page" />
+    <meta name="keywords" content="responsive" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+
+
     <meta charset="utf-8">
     
     <!-- Always force latest IE rendering engine or request Chrome Frame -->
@@ -8,6 +17,7 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
+    <%= javascript_include_tag "modernizr.custom" %>
     
     <%= stylesheet_link_tag "normalize", "all" %>
   </head>
@@ -17,5 +27,13 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <%= javascript_include_tag  "all" %>
+        <script>
+      $(function() {
+
+        Boxgrid.init();
+        
+
+      });
+    </script>
   </body>
 </html>
