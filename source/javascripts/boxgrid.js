@@ -76,10 +76,10 @@ var Boxgrid = (function() {
 
       $formContainer.hide();
 
-      $item.on( 'click', function() {
+      $item.on( 'click', function(e) {
 
         if( $item.data( 'isExpanded' ) ) {
-          return false;
+          return;
         }
         $item.data( 'isExpanded', true );
         // save current item's index
