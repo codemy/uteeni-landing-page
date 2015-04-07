@@ -4,8 +4,6 @@ $ ->
   # $contactForm = $('#contact-form')
   # url = '/' #input url here
 
-  $(".js-float-label-wrapper").FloatLabel()
-
   # submitForm = (e) ->
   #   console.log 'submit business form'
   #   $form = $(@).parents('form')
