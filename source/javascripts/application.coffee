@@ -1,8 +1,8 @@
 #= require modernizr.custom
 #= require serializeObject
+#= require boxgrid
 
 #= require form
 #= require pins
-#= require pins-fall
+#= require pins_fall
 #= require scroll
-#= require boxgrid

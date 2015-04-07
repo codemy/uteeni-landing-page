@@ -3,7 +3,7 @@
 
 ### Todo's
 
-- [10%] Convert JS/jQuery to CoffeeScript
+- [x] Convert JS/jQuery to CoffeeScript
 [<img src="http://img04.bgstatic-com.de/images/documents/documents/3236/modulecontent/612x0/en_top5_quote_aoe.jpg">](http://google.com)
 - [x] Divide code up into partials
 - [20%] Clean up SASS
