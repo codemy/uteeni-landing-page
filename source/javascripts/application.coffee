@@ -1,4 +1,5 @@
-#= require vendor/modernizr.custom
+#= require modernizr.custom
+#= require serializeObject
 
 #= require form
 #= require pins
