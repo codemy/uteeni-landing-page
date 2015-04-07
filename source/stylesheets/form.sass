@@ -4,13 +4,74 @@
  *
  */
 
-form
-  h2
-    font-size: 36px
-    display: inline-block
-    margin-bottom: 24px
-  input
-    margin-bottom: 0px
+fieldset
+  border: none
+
+label
+  font-size: 36px
+  display: inline-block
+  margin-bottom: 24px
+
+input, textarea
+  border: 2px solid white
+  background-color: transparent
+  font-size: 18px
+  font-family: "Oswald"
+  color: white
+
+textarea
+  width: 100%
+  padding: 12px 24px
+
+input
+  height: 60px
+  width: 100%
+  margin-bottom: 12px
+  padding: 0 24px
+
+/*
+ *
+ * placeholder
+ *
+ */
+
+\::-webkit-input-placeholder
+  // WebKit browsers
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\:-moz-placeholder
+  // Mozilla Firefox 4 to 18
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\::-moz-placeholder
+  // Mozilla Firefox 19+
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+\:-ms-input-placeholder
+  // Internet Explorer 10+
+  font-family: "Oswald"
+  color: white
+  font-size: 18px
+  line-height: 1
+
+/*
+ *
+ * form container
+ *
+ */
+
+.form-container
+  width: 400px
+  margin: 200px auto
 
 /*
  *
@@ -22,7 +83,15 @@ form
 .business_form
   background-color: transparent
 
-form
+form[name="mc-embedded-subscribe-form"]
+  h2
+    font-size: 36px
+    display: inline-block
+    margin-bottom: 24px
+
+  input
+    margin-bottom: 0px
+
   .mc-field-group,
   #mce-responses > .response
     margin-bottom: 12px
@@ -30,15 +99,3 @@ form
   .mc-field-group
     label
       display: none
-
-/*
- *
- * float label
- *
- */
-
-.js-float-label-wrapper
-  &.focused,
-  &.populated 
-    label
-      margin-bottom: 0px

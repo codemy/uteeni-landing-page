@@ -1,4 +1,8 @@
-html, body, .container, .main, #scroller
+html, 
+body, 
+.container, 
+.main, 
+#scroller
   height: 100%
 
 #cover
@@ -127,13 +131,6 @@ html, body, .container, .main, #scroller
     font-size: 34px
     margin-bottom: 55px
 
-.sign-up-btn
-  font-family: 'Oswald'
-  font-size: 24px
-  padding: 16px 120px
-  background-color: #53BEB0
-  color: white
-
 // === Pins ===
 
 .pin-container
@@ -228,6 +225,8 @@ html, body, .container, .main, #scroller
     -o-filter: none
     filter: none
     z-index: 1
+  &:nth-of-type(-n+6)
+    margin-bottom: 20px
   &:nth-of-type(1)
     background-image: url("../images/ben2.png")
   &:nth-of-type(2)
@@ -347,23 +346,20 @@ h4
   right: 24px
   font-size: 120px
   line-height: 24px
-  //  text-indent: -9000px;
   cursor: pointer
   z-index: 1000
-
-//.rb-close::before {
- *  content: 'x';
- *  font-weight: 100;
- *  position: absolute;
- *  top: 0;
- *  left: 0;
- *  width: 100%;
- *  height: 100%;
- *  font-size: 3em;
- *  line-height: 0.6;
- *  text-align: center;
- *  text-indent: 0px;
- *}
+  // &::before
+  //   content: 'x'
+  //   font-weight: 100
+  //   position: absolute
+  //   top: 0
+  //   left: 0
+  //   width: 100%
+  //   height: 100%
+  //   font-size: 3em
+  //   line-height: 0.6
+  //   text-align: center
+  //   text-indent: 0px
 
 .rb-week
   width: 100%
@@ -391,73 +387,8 @@ h4
       font-size: 1em
       line-height: 1.2
 
-.form-container
-  width: 400px
-  margin: 200px auto
-
-fieldset
-  border: none
-
-label
-  font-size: 36px
-  display: inline-block
-  margin-bottom: 24px
-
-textarea
-  border: 2px solid white
-  padding: 12px 24px
-  width: 100%
-  font-size: 18px
-  font-family: "Oswald"
-
-input
-  height: 60px
-  width: 100%
-  margin-bottom: 12px
-  padding: 0 24px
-  font-size: 18px
-  color: white
-  border: 2px solid white
-  background-color: transparent
-
 .submit-message
   display: none
-
-\::-webkit-input-placeholder
-  // WebKit browsers
-  font-family: "Oswald"
-  color: white
-  font-size: 18px
-  line-height: 1
-
-\:-moz-placeholder
-  // Mozilla Firefox 4 to 18
-  font-family: "Oswald"
-  color: white
-  font-size: 18px
-  line-height: 1
-
-\::-moz-placeholder
-  // Mozilla Firefox 19+
-  font-family: "Oswald"
-  color: white
-  font-size: 18px
-  line-height: 1
-
-\:-ms-input-placeholder
-  // Internet Explorer 10+
-  font-family: "Oswald"
-  color: white
-  font-size: 18px
-  line-height: 1
-
-.submit-btn
-  font-family: "Oswald"
-  border: 2px solid white
-  color: white
-  text-transform: uppercase
-  background-color: transparent
-  margin-bottom: 18px
 
 .rb-week
   [class^="icon-"]:before
@@ -465,34 +396,6 @@ input
     font-weight: normal
   > div:first-child [class^="icon-"]
     opacity: 0.1
-
-// Colors
-
-// Grid
-
-.login-grid li
-  &:nth-child(1)
-    background: #3399CC
-    background-image: url('../images/login-bg-user-small.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: left center
-  &:nth-child(2)
-    background: #33CCCC
-    background-image: url('../images/login-bg-business-small.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: right top
-  &:nth-child(1) .rb-week > div:nth-child(1)
-    background: #3399CC
-    background-image: url('../images/login-bg-user-large.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-  &:nth-child(2) .rb-week > div:nth-child(1)
-    background: #33CCCC
-    background-image: url('../images/login-bg-business-large.jpg')
-    background-repeat: no-repeat
-    background-size: cover
 
 // Overlay Columns
 
@@ -522,14 +425,6 @@ h4
 .inner-container
   width: 1000px
   margin: 0 auto
-
-.col-50
-  width: 50%
-  float: left
-  &:nth-of-type(1)
-    padding-right: 24px
-  &:nth-of-type(2)
-    padding-left: 24px
 
 #contact-form
   input
