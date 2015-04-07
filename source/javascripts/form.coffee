@@ -1,24 +1,39 @@
 $ ->
-  # $userForm = $('.user-form')
-  # $businessForm = $('#business-form')
-  # $contactForm = $('#contact-form')
-  # url = '/' #input url here
+  $('#contact-form').submit (e) ->
+    e.preventDefault()
+    form_data = $(@).serializeObject()
 
-  # submitForm = (e) ->
-  #   console.log 'submit business form'
-  #   $form = $(@).parents('form')
-  #   console.log $form.attr('method')
-  #   $.ajax
-  #     url: $form.attr('action').replace('/post?', '/post-json?').concat('&c=?')
-  #     method: 'POST'
-  #     data: $form.serialize()
-  #     # dataType: 'jsonp'
-  #     # cache: false
-  #     crossDomain: true
-  #     success: ->
-  #       console.log 'success'
-  #       $form.find('.submit-message').fadeIn()
+    $.ajax
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json'
+      dataType: 'json'
+      type: 'POST'
+      data: 
+        key: 'x9CuMIO5tPbLJY-SPvRP3w'
+        message: 
+          html: "<p>Email: #{form_data.email}</p>
+                 <p>Subject: #{form_data.subject}</p>
+                 <p>Address: #{form_data.address}</p>"
 
-  # $userForm.on "click", "[type='submit']", submitForm
-  # $businessForm.on "click", "[type='submit']", submitForm
-  # $contactForm.on "click", "[type='submit']", submitForm
+          text: "Email: #{form_data.email}\n
+                 Subject: #{form_data.subject}\n
+                 Address: #{form_data.address}"
+
+          subject: "#{form_data.subject}"
+          from_email: "#{form_data.email}"
+          from_name: "#{form_data.email}"
+          subaccount: "bedriftsoket-static"
+          to: [
+            { 
+              email: "admin@bedriftsoket.no",
+              name: "Bedriftsoket Admin",
+              type: "to" 
+            }
+          ]
+
+      beforeSend: (xhr, settings) =>
+        $(@).find('input, textarea').attr('disabled', 'disabled')
+        $(@).find('button').text('Sending...')
+
+      success: (data, textStatus, xhr) =>
+        $(@).find('input, textarea').val('')
+        $(@).find('button').text("Message Sent!").delay(1000)
