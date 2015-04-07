@@ -6,174 +6,28 @@ title: Welcome to UTEENI APP
   <div class="container">
     <div id="scroller" class="scroller">
       <section id="cover">
-        <center>
-          <div id="heading-container" style="display: none">
-            <img src="images/logo.png" alt="">
-            <h1>
-              Get connected
-            </h1>
-            <h2>
-              A simpler way to increase your business
-            </h2>
-            <a href="#" class="sign-up-btn">
-              Sign up
-            </a>
-          </div>
-        </center>
+        <%= partial 'cover' %>
       </section>
 
       <section id="features">
-        <div class="pin-container">
-          <center>
-            <h2>
-              What are you doing <br>
-              to market your business?
-            </h2>
-          </center>
-          <figure class="pin pin-1">
-            <div class="pin-icon">
-              <span class="count">
-                <span class="percentage-count">51</span>
-              </span>
-            </div>
-            <figcaption>
-              Look for information on local <br>
-              businesses and services on their <br>
-              smartphone everyday.
-            </figcaption>
-          </figure>
-
-          <figure class="pin pin-2">
-            <div class="pin-icon">
-              <span class="count">
-                <span class="percentage-count">40</span>
-              </span>
-            </div>
-            <figcaption>
-              Look for information on local <br>
-              businesses and services on their <br>
-              smartphone everyday.
-            </figcaption>
-          </figure>
-          <figure class="pin pin-3">
-            <div class="pin-icon">
-              <span class="count">
-                <span class="percentage-count">27</span>
-              </span>
-            </div>
-            <figcaption>
-              Look for information on local <br>
-              businesses and services on their <br>
-              smartphone everyday.
-            </figcaption>
-          </figure>
-        </div><!-- pin-container -->
+        <%= partial 'features' %>
       </section>
 
       <section id="app-showcase" style="position: relative;">
-        <div class="gradient">
-          <h1>
-            We direct customers searching
-          </h1>
-          <h2>
-            for products and services with your business
-          </h2>
-        </div>
-
-        <center>
-          <div id="iphone-container">
-            <img src="images/iphone-thumb.png">
-          </div>
-        </center> 
+        <%= partial 'showcase' %>
       </section>
 
       <section id="login">
-        <h1>
-          Sign up
-        </h1>
-        <h4>for the Beta Release of Thailand's Premier Directory</h4>
-
-        <ul id="login-grid" class="login-grid clearfix">
-          <li>
-            <span class="rb-temp"><img src="images/login-icon-customer.png" alt=""></span>
-            <span class="rb-temp">User</span>
-            <div class="rb-overlay">
-              <span class="rb-close">&times;</span>
-              <div class="rb-week">
-                <div>
-                  <div class="form-container">
-                    <iframe src="user_form" frameborder="0" width="100%" height="800" scrolling="no" seamless="seamless">
-                      <a href="http://eepurl.com/bi-oe5" target="_blank">click here to sign up</a>
-                    </iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <span class="rb-temp"><img src="images/login-icon-business.png" alt=""></span>
-            <span class="rb-temp">Business</span>
-            <div class="rb-overlay">
-              <span class="rb-close">&times;</span>
-              <div class="rb-week">
-                <div>
-                  <div class="form-container">
-                    <iframe src="business_form" frameborder="0" width="100%" height="800" scrolling="no" seamless="seamless">
-                      <a href="http://eepurl.com/biSW-P" target="_blank">click here to sign up</a>
-                    </iframe>
-                  </div>
-                </div>
-              </div><!-- rb-week -->
-            </div>
-          </li>
-        </ul> 
+        <%= partial 'sign_up' %>
       </section>
 
       <section id="team">
-        <h1>
-          Our staff
-        </h1>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <br>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
-        <span class="avatar"></span>
+        <%= partial 'team' %>
       </section>
 
       <section id="contact">
-        <h1>
-          General Inquiries 
-        </h1>
-        <h4>
-          13° 44'49.1"N 100°33'24.4"E
-        </h4>
-        <div class="inner-container cf">
-          <form action="#" id="contact-form">
-            <div class="col-50">
-              <fieldset>
-                <input type="email" id="email" name="email" placeholder="e.g. john-doe@example.com" required />
-                <input type="text" id="subject" name="subject" placeholder="e.g. subject" required />
-              </fieldset>
-            </div>
-            <div class="col-50">
-              <fieldset>
-                <textarea id="address" name="address" rows=4 placeholder="e.g Message goes here..." required></textarea>
-              </fieldset>
-            </div>
-            <input type="submit" value="Sign up" class="submit-btn" />
-            <p class="submit-message">
-              Thank you for your enquiry. We will get back to you shortly.
-            </p>
-          </form>
-        </div>
+        <%= partial 'contact' %>
       </section>
+    </div>
   </div>
 </div><!-- main -->
