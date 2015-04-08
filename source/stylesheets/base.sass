@@ -5,19 +5,15 @@ body,
 #scroller
   height: 100%
 
-#cover
-  height: 100%
-  background-image: url(../images/cover-bg.jpg)
-  position: relative
-  background-position: top center
-  background-repeat: no-repeat
-  background-size: cover
-  background-attachment: fixed
+body
+  background-image: url(../images/bgtop.png), url(../images/bg.png)
+  background-repeat: repeat-x, repeat
 
-#features, #app-showcase, #login
-  z-index: 1
-
-// === Section Backgrounds ===
+/*
+ *
+ * section background
+ *
+ */
 
 .scroller section img.bg
   min-height: 100%
@@ -26,91 +22,20 @@ body,
   top: left
   left: 0
 
-//body {
- *    background-image: url(images/bgtop.png), url(images/bg.png);
- *    background-repeat: repeat-x, repeat;
- *}
-
-//#cover {
- *  background: url(../images/cover-bg.jpg) no-repeat center center fixed; 
- *  -webkit-background-size: cover;
- *  -moz-background-size: cover;
- *  -o-background-size: cover;
- *  background-size: cover;
- *}
-
-#features
-  background-image: url(../images/city-decal.png)
-  background-repeat: no-repeat
-  background-position: bottom
-  background-color: #F6F6F6
-  box-shadow: 0px -7px 8px 0px rgba(0, 0, 0, 0.2)
-  position: relative
-  h2
-    font-family: 'Oswald'
-    text-transform: uppercase
-    font-size: 34px
-    position: absolute
-    left: 50%
-    top: 50%
-    color: #333
-    -webkit-transform: translate(-50%, -50%)
-    transform: translate(-50%, -50%)
-
-// === Features Section ===
-
-// === Login Section ===
-
-// === App-showcase Section ===
-
-#app-showcase
-  text-align: center
-  background-color: #F6F6F6
-
-.gradient
-  padding-top: 60px
-  height: 760px
-  width: 100%
-  margin: 0 auto
-  background: #5173a0
-  background: -moz-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #5173a0), color-stop(48%, #76cec0), color-stop(100%, #e7eecb))
-  background: -webkit-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
-  background: -o-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
-  background: -ms-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
-  background: linear-gradient(135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5173a0', endColorstr='#e7eecb',GradientType=1 )
-
-#app-showcase h1, h2
-  //  font-family: 'Oswald';
-   *letter-spacing: 2px;
-  font-family: 'Oswald'
-  text-align: center
-  text-transform: uppercase
-  color: white
-
-#app-showcase
-  h1
-    font-size: 42px
-  h2
-    font-size: 34px
-
-#iphone-container
-  width: 479px
-  height: 846px
-  background-image: url('../images/iphone.png')
-  display: inline-block
-  position: relative
-  margin-top: -560px
-  img
-    position: absolute
-    top: 102px
-    left: 74px
-
-// === Cover Section ===
+/*
+ *
+ * cover
+ *
+ */
 
 #cover
   position: relative
+  height: 100%
+  background: url(../images/cover-bg.jpg) no-repeat center center fixed
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
 
 #heading-container
   color: white
@@ -131,7 +56,29 @@ body,
     font-size: 34px
     margin-bottom: 55px
 
-// === Pins ===
+/*
+ *
+ * features
+ *
+ */
+
+#features
+  background-image: url(../images/city-decal.png)
+  background-repeat: no-repeat
+  background-position: bottom
+  background-color: #F6F6F6
+  box-shadow: 0px -7px 8px 0px rgba(0, 0, 0, 0.2)
+  position: relative
+  h2
+    font-family: 'Oswald'
+    text-transform: uppercase
+    font-size: 34px
+    position: absolute
+    left: 50%
+    top: 50%
+    color: #333
+    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
 
 .pin-container
   position: relative
@@ -161,13 +108,14 @@ body,
   font-weight: 400
   opacity: 0
 
-.percentage-count:after
-  content: "%"
-  display: inline-block
-  position: relative
-  top: -2px
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
-  font-weight: bold
+.percentage-count
+  &:after
+    content: "%"
+    display: inline-block
+    position: relative
+    top: -2px
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-weight: bold
 
 .count
   font-family: 'Oswald'
@@ -191,7 +139,61 @@ body,
   top: 390px
   right: 60px
 
-// === Team Section ===
+/*
+ *
+ * showcase
+ *
+ */
+
+#app-showcase
+  text-align: center
+  background-color: #F6F6F6
+
+#app-showcase 
+  h1, h2
+    *letter-spacing: 2px
+    font-family: 'Oswald'
+    text-align: center
+    text-transform: uppercase
+    color: white
+
+#app-showcase
+  h1
+    font-size: 42px
+  h2
+    font-size: 34px
+
+.gradient
+  padding-top: 60px
+  height: 760px
+  width: 100%
+  margin: 0 auto
+  background: #5173a0
+  background: -moz-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #5173a0), color-stop(48%, #76cec0), color-stop(100%, #e7eecb))
+  background: -webkit-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -o-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: -ms-linear-gradient(-135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  background: linear-gradient(135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5173a0', endColorstr='#e7eecb',GradientType=1 )
+
+#iphone-container
+  width: 479px
+  height: 846px
+  background-image: url('../images/iphone.png')
+  display: inline-block
+  position: relative
+  margin-top: -560px
+  img
+    position: absolute
+    top: 102px
+    left: 74px
+
+/*
+ *
+ * team
+ *
+ */
 
 #team
   text-align: center
@@ -252,31 +254,28 @@ body,
   &:nth-of-type(12)
     background-image: url("../images/cash2.png")
 
-// === Login Section ===
+/*
+ *
+ * signup
+ *
+ */
 
 #login
   padding-top: 72px
   background: white
   h1
     font-family: 'Oswald'
+    font-size: 42px
     color: #808080
     text-align: center
-
-h4
-  font-family: 'Oswald'
-  color: #808080
-  text-align: center
-
-#login
-  h4
-    color: #808080
-  h1
-    font-size: 42px
     text-transform: uppercase
   h4
+    margin-bottom: 72px
+    font-family: 'Oswald'
     font-size: 24px
     font-weight: 400
-    margin-bottom: 72px
+    color: #808080
+    text-align: center
 
 .login-grid
   list-style: none
@@ -301,7 +300,8 @@ h4
   h3
     font-size: 2.6em
     font-weight: 100
-  &[class^="icon-"]:before, &[class*=" icon-"]:before
+  &[class^="icon-"]:before, 
+  &[class*="icon-"]:before
     font-size: 10em
     position: absolute
     display: block
@@ -387,9 +387,6 @@ h4
       font-size: 1em
       line-height: 1.2
 
-.submit-message
-  display: none
-
 .rb-week
   [class^="icon-"]:before
     font-size: 2.5em
@@ -397,27 +394,33 @@ h4
   > div:first-child [class^="icon-"]
     opacity: 0.1
 
-// Overlay Columns
+.submit-message
+  display: none
 
-// === Contact Section ===
+/*
+ *
+ * z-index
+ *
+ */
+
+#features, #app-showcase, #login
+  z-index: 1
+
+/*
+ *
+ * contact
+ *
+ */
 
 #contact
   height: 583px
   padding: 72px 0
   background-image: url("../images/contact_bg.png")
   h1
+    font-size: 42px
     text-transform: uppercase
     text-align: center
     color: #FEE232
-
-h4
-  text-transform: uppercase
-  text-align: center
-  color: #FEE232
-
-#contact
-  h1
-    font-size: 42px
   h4
     font-size: 24px
     margin-bottom: 36px
@@ -433,6 +436,12 @@ h4
     font-size: 18px
     color: white
     text-align: center
+
+/*
+ *
+ * media screen
+ *
+ */
 
 @media screen and (max-width: 63.125em)
   .login-grid li
