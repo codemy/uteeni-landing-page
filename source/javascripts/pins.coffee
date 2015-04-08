@@ -1,7 +1,7 @@
 $ ->
-  $('.percentage-count').each ->
-    $(@).prop('Counter',0).animate({
-      Counter: $(@).text()
+  $('.pin__percentage').each ->
+    $(@).prop('counter', 0).animate({
+      counter: $(@).text()
     }, {
       duration: 2000,
       easing: 'swing',

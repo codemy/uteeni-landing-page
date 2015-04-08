@@ -14,30 +14,31 @@
 
 /*
  *
- * login grid
+ * signup grid
  *
  */
 
-.login-grid li
-  &:nth-child(1)
-    background: #3399CC
-    background-image: url('../images/login-bg-user-small.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: left center
-  &:nth-child(2)
-    background: #33CCCC
-    background-image: url('../images/login-bg-business-small.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: right top
-  &:nth-child(1) .rb-week > div:nth-child(1)
-    background: #3399CC
-    background-image: url('../images/login-bg-user-large.jpg')
-    background-repeat: no-repeat
-    background-size: cover
-  &:nth-child(2) .rb-week > div:nth-child(1)
-    background: #33CCCC
-    background-image: url('../images/login-bg-business-large.jpg')
-    background-repeat: no-repeat
-    background-size: cover
+.signup__grid 
+  li
+    &:nth-child(1)
+      background: $orange
+      background-image: url('../images/login-bg-user-small.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: left center
+      .rb-week > div:nth-child(1)
+        background: $orange
+        background-image: url('../images/login-bg-user-large.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+    &:nth-child(2)
+      background: $seagreen
+      background-image: url('../images/login-bg-business-small.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: right top 
+      .rb-week > div:nth-child(1)
+        background: $seagreen
+        background-image: url('../images/login-bg-business-large.jpg')
+        background-repeat: no-repeat
+        background-size: cover

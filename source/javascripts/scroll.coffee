@@ -1,19 +1,24 @@
 $ ->
-  slideHeading = ->
-    $headingContainer = $("#heading-container")
-    y_scroll_pos = window.pageYOffset
-    coverHeight = $('#cover').height()
+  $cover = $('#cover')
+  $coverContainer = $cover.find('.cover__container')
 
-    if (y_scroll_pos > coverHeight)
-      $headingContainer.stop().hide()
+  #
+  # slide cover heading
+  #
+  slideHeading = ->
+    if (window.pageYOffset > $cover.height())
+      $coverContainer.stop().hide()
     else
-      $headingContainer.fadeIn(1000)
-  
-  slideHeading()
+      $coverContainer.fadeIn(1000)
+
+  $(window).on('load', slideHeading)
   $(window).on('scroll', slideHeading)
 
-  $('.sign-up-btn').on 'click', (e) ->
+  #
+  # signup
+  #
+  $coverContainer.find('.btn-signup').on 'click', (e) ->
     e.preventDefault()
     $('body').animate
-      scrollTop: $('#login').offset().top
+      scrollTop: $('#sign_up').offset().top
     , 1000

@@ -7,24 +7,11 @@ body,
 
 /*
  *
- * section background
- *
- */
-
-.scroller section img.bg
-  min-height: 100%
-  width: 100%
-  height: auto
-  top: left
-  left: 0
-
-/*
- *
  * cover
  *
  */
 
-#cover
+.cover
   position: relative
   height: 100%
   background: url(../images/cover-bg.jpg) no-repeat center center fixed
@@ -33,12 +20,13 @@ body,
   -o-background-size: cover
   background-size: cover
 
-#heading-container
-  color: white
-  text-transform: uppercase
+.cover__container
+  display: none
   position: fixed
   left: 50%
   top: 50%
+  color: white
+  text-transform: uppercase
   -webkit-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
   z-index: 1
@@ -58,7 +46,7 @@ body,
  *
  */
 
-#features
+.features
   background-image: url(../images/city-decal.png)
   background-repeat: no-repeat
   background-position: bottom
@@ -76,7 +64,7 @@ body,
     -webkit-transform: translate(-50%, -50%)
     transform: translate(-50%, -50%)
 
-.pin-container
+.features__container
   position: relative
   width: 1000px
   height: 800px
@@ -94,19 +82,19 @@ body,
     font-weight: 400
     opacity: 0
 
-.pin-1
+.pin--1
   top: 155px
   left: 65px
 
-.pin-2
+.pin--2
   top: 50px
   right: 180px
 
-.pin-3
+.pin--3
   top: 390px
   right: 60px
 
-.pin-icon
+.pin__icon
   background-image: url("../images/pin.png")
   width: 126px
   height: 104px
@@ -115,16 +103,7 @@ body,
   margin-bottom: 2px
   opacity: 0
 
-.percentage-count
-  &:after
-    content: "%"
-    display: inline-block
-    position: relative
-    top: -2px
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
-    font-weight: bold
-
-.count
+.pin__count
   font-family: 'Oswald'
   color: white
   font-size: 28px
@@ -134,13 +113,23 @@ body,
   -webkit-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
 
+.pin__percentage
+  &:after
+    content: "%"
+    display: inline-block
+    position: relative
+    top: -2px
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
+    font-weight: bold
+
 /*
  *
  * showcase
  *
  */
 
-#app-showcase
+.showcase
+  position: relative
   text-align: center
   background-color: $lightGray
   h1, h2
@@ -154,7 +143,7 @@ body,
   h2
     font-size: 34px
 
-.gradient
+.showcase__gradient
   padding-top: 60px
   height: 760px
   width: 100%
@@ -168,7 +157,7 @@ body,
   background: linear-gradient(135deg, #5173a0 0%, #76cec0 48%, #e7eecb 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5173a0', endColorstr='#e7eecb',GradientType=1 )
 
-#iphone-container
+.showcase__iphone
   width: 479px
   height: 846px
   background-image: url('../images/iphone.png')
@@ -182,11 +171,119 @@ body,
 
 /*
  *
+ * signup
+ *
+ */
+
+.signup
+  padding-top: 72px
+  background: white
+  h1
+    font-family: 'Oswald'
+    font-size: 42px
+    color: $textColor
+    text-align: center
+    text-transform: uppercase
+  h4
+    margin-bottom: 72px
+    font-family: 'Oswald'
+    font-size: 24px
+    font-weight: 400
+    color: $textColor
+    text-align: center
+
+.signup__grid
+  list-style: none
+  text-align: center
+  margin: 0 auto
+  li
+    width: 50%
+    height: 450px
+    background-color: $lightBlue
+    color: #fff
+    display: block
+    float: left
+    padding-top: 110px
+    cursor: pointer
+    position: relative
+
+.signup__heading
+  display: block
+  font-size: 24px
+  text-transform: uppercase
+  opacity: 0.7
+  -webkit-transition: opacity 0.2s ease-in-out
+  -moz-transition: opacity 0.2s ease-in-out
+  transition: opacity 0.2s ease-in-out
+
+.signup__grid li:hover 
+  .signup__heading
+    opacity: 1
+
+.signup__overlay
+  opacity: 0
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  -webkit-transition: all 0.4s ease
+  -moz-transition: all 0.4s ease
+  transition: all 0.4s ease
+  z-index: -1
+  pointer-events: none
+  cursor: default
+
+.signup__close
+  position: absolute
+  top: 24px
+  right: 24px
+  font-size: 120px
+  line-height: 24px
+  cursor: pointer
+  z-index: 1000
+
+.signup__fullscreen
+  width: 100%
+  height: 100%
+  > div
+    width: 0%
+    height: 100%
+    float: left
+    position: relative
+    padding: 3% 0
+    &:first-child
+      width: 100%
+      [class^="icon-"]
+        opacity: 0.1
+
+  [class^="icon-"]
+    &:before
+      font-size: 2.5em
+      font-weight: normal
+
+  span
+    padding: 5% 0
+    font-size: 2em
+    font-weight: 100
+    display: block
+    margin: auto 0
+    height: 30%
+    width: 100%
+    line-height: 0.8
+    &.rb-city
+      font-weight: 700
+      padding: 1% 10%
+      font-size: 1em
+      line-height: 1.2
+
+/*
+ *
  * team
  *
  */
 
-#team
+.team
   text-align: center
   padding: 72px 0 96px 0
   h1
@@ -197,7 +294,7 @@ body,
     text-transform: uppercase
     margin-bottom: 24px
 
-.avatar
+.team__avatar
   display: inline-block
   width: 120px
   height: 120px
@@ -247,155 +344,11 @@ body,
 
 /*
  *
- * signup
- *
- */
-
-#login
-  padding-top: 72px
-  background: white
-  h1
-    font-family: 'Oswald'
-    font-size: 42px
-    color: $textColor
-    text-align: center
-    text-transform: uppercase
-  h4
-    margin-bottom: 72px
-    font-family: 'Oswald'
-    font-size: 24px
-    font-weight: 400
-    color: $textColor
-    text-align: center
-
-.login-grid
-  list-style: none
-  text-align: center
-  margin: 0 auto
-  li
-    width: 50%
-    height: 450px
-    background-color: $lightBlue
-    color: #fff
-    display: block
-    float: left
-    padding-top: 110px
-    cursor: pointer
-    position: relative
-
-.rb-grid li
-  &.rb-span-2
-    width: 49%
-  &.rb-span-4
-    width: 99%
-  h3
-    font-size: 2.6em
-    font-weight: 100
-  &[class^="icon-"]:before, 
-  &[class*="icon-"]:before
-    font-size: 10em
-    position: absolute
-    display: block
-    width: 100%
-    height: 100%
-    top: 0
-    left: 0
-    line-height: 3
-    opacity: 0.4
-    text-align: right
-    pointer-events: none
-
-.rb-temp
-  display: block
-  font-size: 24px
-  text-transform: uppercase
-  opacity: 0.7
-  -webkit-transition: opacity 0.2s ease-in-out
-  -moz-transition: opacity 0.2s ease-in-out
-  transition: opacity 0.2s ease-in-out
-
-.login-grid li:hover .rb-temp
-  opacity: 1
-
-.rb-overlay
-  opacity: 0
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  -webkit-transition: all 0.4s ease
-  -moz-transition: all 0.4s ease
-  transition: all 0.4s ease
-  z-index: -1
-  pointer-events: none
-  cursor: default
-
-.rb-close
-  position: absolute
-  top: 24px
-  right: 24px
-  font-size: 120px
-  line-height: 24px
-  cursor: pointer
-  z-index: 1000
-  // &::before
-  //   content: 'x'
-  //   font-weight: 100
-  //   position: absolute
-  //   top: 0
-  //   left: 0
-  //   width: 100%
-  //   height: 100%
-  //   font-size: 3em
-  //   line-height: 0.6
-  //   text-align: center
-  //   text-indent: 0px
-
-.rb-week
-  width: 100%
-  height: 100%
-  > div
-    width: 0%
-    height: 100%
-    float: left
-    position: relative
-    padding: 3% 0
-    &:first-child
-      width: 100%
-      [class^="icon-"]
-        opacity: 0.1
-
-  [class^="icon-"]
-    &:before
-      font-size: 2.5em
-      font-weight: normal
-
-  span
-    padding: 5% 0
-    font-size: 2em
-    font-weight: 100
-    display: block
-    margin: auto 0
-    height: 30%
-    width: 100%
-    line-height: 0.8
-    &.rb-city
-      font-weight: 700
-      padding: 1% 10%
-      font-size: 1em
-      line-height: 1.2
-
-.submit-message
-  display: none
-
-/*
- *
  * z-index
  *
  */
 
-#features, #app-showcase, #login
+.features, .showcase, .signup
   z-index: 1
 
 /*
@@ -406,7 +359,7 @@ body,
 
 $contactHeadingColor: $yellow
 
-#contact
+.contact
   height: 550px
   padding: 200px 0
   background-image: url("../images/contact-bg.jpg")
@@ -431,7 +384,7 @@ $contactHeadingColor: $yellow
     font-size: 24px
     color: $contactHeadingColor
 
-.inner-container
+.contact__container
   width: 1000px
   margin: 0 auto
 
@@ -439,10 +392,11 @@ $contactHeadingColor: $yellow
   display: none
   input
     font-family: 'Oswald'
-  .submit-message
+  .contact__message
+    display: none
+    text-align: center
     font-size: 18px
     color: white
-    text-align: center
 
 /*
  *
@@ -451,15 +405,17 @@ $contactHeadingColor: $yellow
  */
 
 @media screen and (max-width: 63.125em)
-  .login-grid li
+  .signup__grid li
     width: 100%
     height: 10em
     text-align: left
-    &.rb-span-2, &.rb-span-4
+    &.rb-span-2, 
+    &.rb-span-4
       width: 100%
       height: 10em
       text-align: left
-    &[class^="icon-"]:before, &[class*=" icon-"]:before
+    &[class^="icon-"]:before, 
+    &[class*=" icon-"]:before
       font-size: 6em
       left: auto
       right: 0

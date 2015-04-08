@@ -1,6 +1,6 @@
 $ ->
   $pin = $(".pin")
-  $pinIcon = $pin.find(".pin-icon")
+  $pinIcon = $pin.find(".pin__icon")
   $pinText = $pin.find("figcaption")
  
   $.each $pinIcon, (i, el) ->

@@ -41,7 +41,7 @@ $special = $event.special.debouncedresize = {
 
 var Boxgrid = (function() {
 
-  var $items = $( '#login-grid > li' ),
+  var $items = $('.rb-grid > li'),
     transEndEventNames = {
       'WebkitTransition' : 'webkitTransitionEnd',
       'MozTransition' : 'transitionend',

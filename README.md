@@ -8,7 +8,7 @@
 - [x] Divide code up into partials
 - [x] Clean up SASS
 - Add better form functionality
-- [30%] Review naming conventions and create SASS variables
+- [x] Review naming conventions and create SASS variables
 - Add interactivity to the app-showcase section
 - [x] Hook forms up to a back-end
 - Have pins fall down on specific scroll position
