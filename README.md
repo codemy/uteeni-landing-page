@@ -12,4 +12,4 @@
 - Add interactivity to the app-showcase section
 - [x] Hook forms up to a back-end
 - Have pins fall down on specific scroll position
-- Have page slide down to "sign-up section" when clicking on main action button
+- [x] Have page slide down to "sign-up section" when clicking on main action button

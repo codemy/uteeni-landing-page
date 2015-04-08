@@ -11,3 +11,9 @@ $ ->
   
   slideHeading()
   $(window).on('scroll', slideHeading)
+
+  $('.sign-up-btn').on 'click', (e) ->
+    e.preventDefault()
+    $('body').animate
+      scrollTop: $('#login').offset().top
+    , 1000
