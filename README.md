@@ -6,7 +6,7 @@
 - [x] Convert JS/jQuery to CoffeeScript
 [<img src="http://img04.bgstatic-com.de/images/documents/documents/3236/modulecontent/612x0/en_top5_quote_aoe.jpg">](http://google.com)
 - [x] Divide code up into partials
-- [20%] Clean up SASS
+- [x] Clean up SASS
 - Add better form functionality
 - [30%] Review naming conventions and create SASS variables
 - Add interactivity to the app-showcase section
