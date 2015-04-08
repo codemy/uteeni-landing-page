@@ -66,7 +66,7 @@ body
   background-image: url(../images/city-decal.png)
   background-repeat: no-repeat
   background-position: bottom
-  background-color: #F6F6F6
+  background-color: $lightGray
   box-shadow: 0px -7px 8px 0px rgba(0, 0, 0, 0.2)
   position: relative
   h2
@@ -146,7 +146,7 @@ body
 
 #app-showcase
   text-align: center
-  background-color: #F6F6F6
+  background-color: $lightGray
   h1, h2
     *letter-spacing: 2px
     font-family: 'Oswald'
@@ -195,7 +195,7 @@ body
   padding: 72px 0 96px 0
   h1
     font-family: 'Oswald'
-    color: #808080
+    color: $textColor
     text-align: center
     font-size: 42px
     text-transform: uppercase
@@ -261,7 +261,7 @@ body
   h1
     font-family: 'Oswald'
     font-size: 42px
-    color: #808080
+    color: $textColor
     text-align: center
     text-transform: uppercase
   h4
@@ -269,7 +269,7 @@ body
     font-family: 'Oswald'
     font-size: 24px
     font-weight: 400
-    color: #808080
+    color: $textColor
     text-align: center
 
 .login-grid
@@ -279,7 +279,7 @@ body
   li
     width: 50%
     height: 450px
-    background: #8CC7DF
+    background-color: $lightBlue
     color: #fff
     display: block
     float: left
@@ -370,9 +370,10 @@ body
       [class^="icon-"]
         opacity: 0.1
 
-  [class^="icon-"]:before
-    font-size: 2.5em
-    font-weight: normal
+  [class^="icon-"]
+    &:before
+      font-size: 2.5em
+      font-weight: normal
 
   span
     padding: 5% 0
@@ -407,6 +408,8 @@ body
  *
  */
 
+$contactHeadingColor: $yellow
+
 #contact
   height: 583px
   padding: 72px 0
@@ -415,7 +418,7 @@ body
     font-size: 42px
     text-transform: uppercase
     text-align: center
-    color: #FEE232
+    color: $contactHeadingColor
   h4
     font-size: 24px
     margin-bottom: 36px
