@@ -90,6 +90,25 @@ body
 
 .pin
   position: absolute
+  figcaption
+    font-family: 'Oswald'
+    font-weight: bold
+    text-align: center
+    font-size: 18px
+    font-weight: 400
+    opacity: 0
+
+.pin-1
+  top: 155px
+  left: 65px
+
+.pin-2
+  top: 50px
+  right: 180px
+
+.pin-3
+  top: 390px
+  right: 60px
 
 .pin-icon
   background-image: url("../images/pin.png")
@@ -98,14 +117,6 @@ body
   position: relative
   margin: 0 auto
   margin-bottom: 2px
-  opacity: 0
-
-.pin figcaption
-  font-family: 'Oswald'
-  font-weight: bold
-  text-align: center
-  font-size: 18px
-  font-weight: 400
   opacity: 0
 
 .percentage-count
@@ -127,18 +138,6 @@ body
   -webkit-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
 
-.pin-1
-  top: 155px
-  left: 65px
-
-.pin-2
-  top: 50px
-  right: 180px
-
-.pin-3
-  top: 390px
-  right: 60px
-
 /*
  *
  * showcase
@@ -148,16 +147,12 @@ body
 #app-showcase
   text-align: center
   background-color: #F6F6F6
-
-#app-showcase 
   h1, h2
     *letter-spacing: 2px
     font-family: 'Oswald'
     text-align: center
     text-transform: uppercase
     color: white
-
-#app-showcase
   h1
     font-size: 42px
   h2
@@ -372,6 +367,13 @@ body
     padding: 3% 0
     &:first-child
       width: 100%
+      [class^="icon-"]
+        opacity: 0.1
+
+  [class^="icon-"]:before
+    font-size: 2.5em
+    font-weight: normal
+
   span
     padding: 5% 0
     font-size: 2em
@@ -386,13 +388,6 @@ body
       padding: 1% 10%
       font-size: 1em
       line-height: 1.2
-
-.rb-week
-  [class^="icon-"]:before
-    font-size: 2.5em
-    font-weight: normal
-  > div:first-child [class^="icon-"]
-    opacity: 0.1
 
 .submit-message
   display: none
