@@ -294,10 +294,14 @@ body,
     text-transform: uppercase
     margin-bottom: 24px
 
+.team__content
+  width: 840px
+  margin: 0 auto
+
 .team__avatar
   display: inline-block
-  width: 120px
   height: 120px
+  width: 120px
   margin-right: 20px
   background-size: contain
   transition: all .2s ease-in-out
@@ -315,32 +319,13 @@ body,
     -o-filter: none
     filter: none
     z-index: 1
-  &:nth-of-type(-n+6)
-    margin-bottom: 20px
-  &:nth-of-type(1)
-    background-image: url("../images/ben2.png")
-  &:nth-of-type(2)
-    background-image: url("../images/zack2.png")
-  &:nth-of-type(3)
-    background-image: url("../images/nil2.png")
-  &:nth-of-type(4)
-    background-image: url("../images/non2.png")
-  &:nth-of-type(5)
-    background-image: url("../images/aof2.png")
-  &:nth-of-type(6)
-    background-image: url("../images/yim2.png")
-  &:nth-of-type(7)
-    background-image: url("../images/aun2.png")
-  &:nth-of-type(8)
-    background-image: url("../images/off2.png")
-  &:nth-of-type(9)
-    background-image: url("../images/start2.png")
-  &:nth-of-type(10)
-    background-image: url("../images/mac2.png")
-  &:nth-of-type(11)
-    background-image: url("../images/air2.png")
-  &:nth-of-type(12)
-    background-image: url("../images/cash2.png")
+  &:nth-of-type(6n)
+    margin-right: 0px
+  &:not(:nth-last-child(-n+2))
+    margin-bottom: 25px
+  img
+    height: 120px
+    width: 120px
 
 /*
  *

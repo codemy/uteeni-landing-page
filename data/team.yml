@@ -1,0 +1,69 @@
+ben:
+  name: Benjamin
+  title: CEO
+  image_name: ben.png
+
+zack:
+  name: Zack
+  title: CTO
+  image_name: zack.png
+
+nil:
+  name: Nil
+  title: Operation
+  image_name: nil.png
+
+non:
+  name: Non
+  title: Developer
+  image_name: non.png
+
+aof:
+  name: Aof
+  title: Back-End Developer
+  image_name: aof.png
+
+yim:
+  name: Yim
+  title: iOS Developer
+  image_name: yim.png
+
+aun:
+  name: Aunlee
+  title: Designer
+  image_name: aun.png
+
+'off':
+  name: 'Off'
+  title: iOS Developer
+  image_name: off.png
+
+start:
+  name: Start
+  title: Back-End Developer
+  image_name: start.png
+
+max:
+  name: Max
+  title: iOS Developer
+  image_name: max.png
+
+air:
+  name: Air
+  title: Developer
+  image_name: air.png
+
+cash:
+  name: Cash
+  title: Business
+  image_name: cash.png
+
+travis:
+  name: Travis
+  title: Business
+  image_name: travis.png
+
+arun:
+  name: Arun
+  title: Intern
+  image_name: arun.png
