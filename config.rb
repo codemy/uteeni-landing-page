@@ -41,11 +41,11 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def team(person)
+    content_tag :span, image_tag("team/#{person.image_name}", alt: "#{person.name} #{person.title}"), class: 'team__avatar'
+  end
+end
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
